@@ -2684,7 +2684,7 @@ utils::browseURL(path)
 <ol>
   <li class='fragment'>By this time, you are already a R user.</li>
   <li class='fragment'>However, life sucks. Bugs and problems are everywhere.</li>
-  <li class='fragment'>No one can give you a hand if you does not reach out.</li>
+  <li class='fragment'>No one can give you a hand if you do not reach out.</li>
 </ol>
 
 ***
