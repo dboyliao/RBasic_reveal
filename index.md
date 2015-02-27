@@ -24,22 +24,22 @@ knit        : slidify::knit2slides
 </h3>
 
 
----
+--- &vertical
 
 # Why R?
 
----
+***
 
 # Why not R?
 
----
+***
 
 - 1. It is FREE!
 - 2. It is open!
 - 3. It is popular! ---> [Kaggle](https://www.kaggle.com/wiki/Software)
 - 4. It is powerful!
 
----
+***
 
 <br>
 <br>
@@ -52,7 +52,7 @@ It is cool to be a hacker!!
 Our Goal: Become a Cool Guy!
 </p>
 
----
+***
 
 ## Mini Project I: Barnsley Fern Fractal
 
@@ -65,13 +65,13 @@ And you can claim that you can do sketch by a computer!
 
 <img src="assets/img/Barnsley.gif" height="70%" width="70%" />
 
----
+***
 
 ## Mini Project II: Battleship
 
 <img src="assets/img/battle_ship.gif" height="30%" width="30%" />
 
----
+***
 
 ## 最後讓我們打個廣告XDD
 
@@ -86,11 +86,11 @@ And you can claim that you can do sketch by a computer!
 在今天的課程裡也會讓大家體驗一下每個課程的主題是什麼。
 </p>
 
----
+--- &vertical
 
 # Syllabus
 
----
+***
 
 ## Syllabus
 
@@ -121,7 +121,7 @@ And you can claim that you can do sketch by a computer!
   </li>
 </ul>
 
----
+***
 
 <ul>
   <li><strong>Merging</strong>
@@ -155,7 +155,7 @@ And you can claim that you can do sketch by a computer!
   </li>
 </ul>
 
----
+--- &vertical
 
 ## package: DSC2014Tutorial
 
@@ -168,7 +168,7 @@ For the best tutorial experience:
   tutorial sessions.
 </p>
 
----
+***
 
 Once you are done with installation:
 
@@ -181,11 +181,11 @@ library("DSC2014Tutorial")
   Let's begin!
 </p>
 
----
+--- &vertical
 
 # Data: Where the Story Begins
 
----
+***
 
 ### 以資料屬性來分：
 - Character (字串)
@@ -194,7 +194,7 @@ library("DSC2014Tutorial")
 - Logical (邏輯值)
 - Complex (複數)
 
----
+***
 
 ### 以資料形態來分：
 - 一般變數
@@ -202,7 +202,7 @@ library("DSC2014Tutorial")
 - Matrix
 - Factor and Data Frame
 
----
+***
 
 ## Examples
 
@@ -225,7 +225,7 @@ library("DSC2014Tutorial")
 ## [1] 3.142
 ```
 
----
+***
 
 
 ```r
@@ -246,11 +246,11 @@ library("DSC2014Tutorial")
 ## [1] FALSE
 ```
 
----
+--- &vertical
 
 # Logical Operation
 
----
+***
 
 ## Basic Operations: & (and), | (or), ==
 
@@ -280,7 +280,7 @@ bol3 <- F
 ## [1] FALSE
 ```
 
----
+***
 
 
 ```r
@@ -307,7 +307,7 @@ is.na(a)
 ## [1] TRUE
 ```
 
----
+***
 
 ## Fun Time
 
@@ -323,12 +323,16 @@ sum(ind)
 ```
 <p class='fragment'>Why???</p>
 
----
+--- &vertical
 
 # Subsetting Phase I
 ## Index
 
----
+***
+
+# Vector and List
+
+***
 
 ## Vector and List
 
@@ -362,7 +366,7 @@ vec2 <- c('a', 'b', 'c')
 ##     27    187     80
 ```
 
----
+***
 
 ## Funtime
 
@@ -382,7 +386,7 @@ vec2 <- c('a', 'b', 'c')
 
 <p class='fragment'>Why???</p>
 
----
+***
 
 ## Useful Methods for Vector
 - length(): 
@@ -393,7 +397,7 @@ vec2 <- c('a', 'b', 'c')
  - 傳回 my_vec 各維度的名字。
 
 
----
+***
 
 ## Examples
 
@@ -418,8 +422,7 @@ names(Bob)
 ## [1] "age"    "height" "weight"
 ```
 
-
----
+***
 
 ## Examples 
 
@@ -437,7 +440,7 @@ z
 ## [1] 1 2 3 4 5 2 4 8
 ```
 
----
+***
 
 ## Exercise
 
@@ -445,7 +448,7 @@ z
 
 <p class='fragment'>女性參考答案： me <- c(age = "18 forever", W = "secret", height="非常高佻")</p>
 
----
+***
 
 如果我還想記錄頭髮的顏色跟電話號碼呢?
 
@@ -453,7 +456,7 @@ z
 <p class='fragment'>如果電話是 +886 911333966 呢?</p>
 <p class='fragment'>都用字串存好嗎?</p>
 
----
+***
 
 ## List
 
@@ -475,7 +478,7 @@ c(1, T)
 ## [1] 1 1
 ```
 
----
+***
 
 ### 比較
 
@@ -501,7 +504,7 @@ list(1, T)
 ## [1] TRUE
 ```
 
----
+***
 
 
 ```r
@@ -674,18 +677,18 @@ data(iris)
 ## 150          5.9         3.0          5.1         1.8  virginica
 ```
 
----
+***
 
 <p class='fragment'>我們可以用 list 來儲存異質的資料。</p>
 <p class='fragment'>但如何從中擷取出想要的資料呢?</p>
 <p class='fragment'>在接下來的 Subsetting 單元中將一一介紹。</p>
 
----
+--- &vertical
 
 # Vector Subsetting
 ## Phase I
 
----
+***
 
 ## Subsetting by Index
 
@@ -714,7 +717,7 @@ vec[length(vec)]
 ## [1] 6
 ```
 
----
+***
 
 ## Subsetting by Name
 
@@ -737,12 +740,12 @@ Dboy["age"]
 ##  27
 ```
 
----
+***
 
 # List Subsetting
 ## Phase I
 
----
+***
 
 ## Subsetting by Index
 
@@ -779,7 +782,7 @@ Bob[[1]]; class(Bob[[1]])
 ## [1] "numeric"
 ```
 
----
+***
 
 ## Subsetting by Name
 
@@ -808,12 +811,12 @@ Bob[["age"]]
 ## [1] 27
 ```
 
----
+--- &vertical
 
 # Matrix Subsetting
 ## Phase I
 
----
+***
 
 ## Matrix: First Look
 
@@ -824,7 +827,7 @@ A Matrix is something looks like this:
 
 <img src="assets/img/R_Basic_Matrix.png" height="100%" width="100%"/>
 
----
+***
 
 ## Dimension
 
@@ -834,8 +837,7 @@ A Matrix has two dimensions, denoted by i and j.<br>
 i for row indexing, j for column indexing.
 </font>
 
-
----
+***
 
 ## Dimension
 
@@ -847,7 +849,7 @@ i for row indexing, j for column indexing.
 <img src="assets/img/R_Basic_Matrix_row.png" height="100%" width="100%"/>
 
 
----
+***
 
 ## Dimension
 
@@ -858,7 +860,7 @@ j alone can specify one column.
 
 <img src="assets/img/R_Basic_Matrix_col.png" height="100%" width="100%"/>
 
----
+***
 
 ## Dimension
 
@@ -869,8 +871,7 @@ i together with j can specify one element in a matrix.
 
 <img src="assets/img/R_Basic_Matrix_RowAndCol.png" height="100%" width="100%"/>
 
----
-
+***
 
 ## Matrix in R
 
@@ -891,7 +892,7 @@ M1 <- matrix(c(1:144), 12, 12)
 <img src="assets/img/R_Basic_Matrix_ex.png" height="75%" width="75%"/>
 </center>
 
----
+***
 
 ## Matrix: Subsetting by Index.
 
@@ -916,7 +917,7 @@ M1[6, ]
 <img src="assets/img/R_Basic_Matrix_ex_row.png" height="65%" width="65%"/>
 </center>
 
----
+***
 
 ## Matrix: Subsetting by Index
 
@@ -933,7 +934,7 @@ M1[, 6]
 <img src="assets/img/R_Basic_Matrix_ex_col.png" height="70%" width="70%"/>
 </center>
 
----
+***
 
 ## Matrix: Rename
 
@@ -947,7 +948,7 @@ colnames(M1) <- LETTERS[1:12]
 </center>
 
 
----
+***
 
 ## Matrix: Subsetting by Name
 
@@ -964,7 +965,7 @@ M1[, 'F']
 <img src="assets/img/R_Basic_Matrix_ex_name_ref.png" height="65%" width="65%"/>
 </center>
 
----
+***
 
 ## Fun Time
 
@@ -983,12 +984,12 @@ Mat[3, 3] <- "Ha Ha!"    # t(Mat)
 
 <p class='fragment'><font color="yellow"> Why? </font></p>
 
----
+--- &vertical
 
 # Data Frame Subsetting
 ## Phase I
 
----
+***
 
 ## Data Frame: First Look
 
@@ -1002,7 +1003,7 @@ We take iris data set for example
 <img src="assets/img/iris.png" height="70%" width=70%>
 </center>
 
----
+***
 
 ## Dimension
 
@@ -1017,7 +1018,7 @@ Similer to the matrix, a data frame also has two dimensions.
     </center>
 </center>
 
----
+***
 
 ## Data Frame: Subsetting by Index
 
@@ -1035,7 +1036,7 @@ data(iris); iris <- iris[1:12, ];iris[6, ]
 <img src="assets/img/iris_row.png" height="70%" width="70%">
 </center>
 
----
+***
 
 
 ```r
@@ -1050,7 +1051,7 @@ iris[, 2]
 <img src="assets/img/iris_col.png" height="70%" width="70%">
 </center>
 
----
+***
 
 ## Data Frame: Subsetting by Column Name
 
@@ -1067,7 +1068,7 @@ iris[, "Sepal.Width"]
 <img src="assets/img/iris_col.png" height="70%" width="70%">
 </center>
 
----
+***
 
 ## Data Frame: Rename
 
@@ -1094,7 +1095,7 @@ iris
 ```
 
 
----
+***
 
 ## One Simple Way to Construct a Data Frame.
 
@@ -1118,7 +1119,7 @@ str(my_data)
 ##  $ B.Type: Factor w/ 3 levels "A","B","O": 1 2 3
 ```
 
----
+***
 
 ## Fun Time
 
@@ -1126,12 +1127,12 @@ str(my_data)
 > 2. 將得到的資料存成一個 data frame。
 > 3. 如果問不到.... NA 是你的好朋友。
 
----
+--- &vertical
 
 # Subsetting Phase II
 ## Indices
 
----
+***
 
 ## Vector: Reference by Indices
 
@@ -1158,7 +1159,7 @@ Dboy <- c(age=27, weight=82, height=172)
 ##     27    172
 ```
 
----
+***
 
 ## Vector: Multi Indexing with Expression
 
@@ -1179,7 +1180,7 @@ speed[speed > 5]
 ## [47] 24 25
 ```
 
----
+***
 
 ## Vector: Multi Indexing with which()
 
@@ -1201,15 +1202,15 @@ my_vec <- runif(30, 0, 1) # 用 runif 從(0, 1)均勻分佈中抽取 30 個值�
 ```
 
 ```
-##  [1]  2  3  5  6  7  9 10 14 15 16 20 21 22 27
+##  [1]  1  3  8  9 10 11 12 13 15 16 17 19 20 21 22 23 24 25
 ```
 
 ```
-##  [1] 0.7954 0.8832 0.7121 0.9923 0.7737 0.5421 0.9414 0.6966 0.9282 0.8597
-## [11] 0.5213 0.7916 0.8398 0.7367
+##  [1] 0.9638 0.8423 0.5757 0.5377 0.5155 0.6238 0.9371 0.6781 0.9303 0.6985
+## [11] 0.9157 0.5766 0.6292 0.6930 0.6831 0.7012 0.9176 0.5749
 ```
 
----
+***
 
 ## Vector: Multi Indexing with which()
 
@@ -1239,7 +1240,7 @@ Dboy[ind]
 ```
 
 
----
+***
 
 ## List: Subsetting by Indices
 
@@ -1268,7 +1269,7 @@ Bob[c(1, 3)]
 ## [1] "iris"
 ```
 
----
+***
 
 ## List: Subsetting with which()
 
@@ -1292,7 +1293,7 @@ Example:
 ```
 
 
----
+***
 
 
 ```r
@@ -1457,12 +1458,12 @@ Bob[ind]
 ## 150          5.9         3.0          5.1         1.8  virginica
 ```
 
----
+***
 
 # Matrix Subsetting
 ## Phase II
 
----
+***
 
 ## Matrix: Subsetting with Indices
 
@@ -1491,7 +1492,7 @@ M1[c(2, 4), 2:4]
 <img src="assets/img/Matrix_Subsetting_2.png" width="60%" height="60%">
 </center>
 
----
+***
 
 ## Data Frame: Subsetting with Indices
 
@@ -1520,12 +1521,12 @@ iris[c(2, 5), seq(from=1, to = 5, by = 2)]
 <img src="assets/img/DataFrameSubsetting2.png" width="60%" height="60%">
 </center>
 
----
+***
 
 # Merging
 ## rbind and cbind
 
----
+***
 
 ## Merging: rbind
 
@@ -1540,7 +1541,7 @@ iris[c(2, 5), seq(from=1, to = 5, by = 2)]
   <li class='fragment'>Merge two data frames (or matrices) like rows.</li>
 </ul>
 
----
+***
 
 <div align='left'>
 <code>
@@ -1579,7 +1580,7 @@ iris[100:103, ]
 ## 103          7.1         3.0          5.9         2.1  virginica
 ```
 
----
+***
 
 
 ```r
@@ -1597,7 +1598,7 @@ rbind(iris[1:3, ], iris[100:103, ])
 ## 103          7.1         3.0          5.9         2.1  virginica
 ```
 
----
+***
 
 ## Merging: cbind
 
@@ -1617,7 +1618,7 @@ rbind(iris[1:3, ], iris[100:103, ])
 </ul>
 
 
----
+***
 
 ## Merging: cbind
 
@@ -1660,7 +1661,7 @@ Example:
 ## 12          4.8         3.4
 ```
 
----
+***
 
 
 ```r
@@ -1676,7 +1677,7 @@ cbind(A, B)
 ## 5         3.6          1.4         0.2          4.8         3.4
 ```
 
----
+***
 
 ## Fun Time
 
@@ -1687,11 +1688,11 @@ cbind(A, B)
   <li class='fragment'>再多問兩位新朋友，並把新朋友的資料合併至原來的 data frame。(cbind or rbind ?)</li>
 </ol>
 
----
+--- &vertical
 
-# sorting and ordering
+# Sorting and Ordering
 
----
+***
 
 ### The Difference Between sort() and order()
 
@@ -1706,13 +1707,13 @@ cbind(A, B)
 <img src="assets/img/Blah.jpg" width="40%" height="40%" class="fragment">
 </center>
 
----
+***
 
 <center>
 <img src="assets/img/What.png" width="50%" height="50%">
 </center>
 
----
+***
 
 ## Let the Code Reveals Itself
 
@@ -1733,7 +1734,7 @@ Sepal.Length <- iris[1:12, "Sepal.Length"]
 ##  [1]  9  4  7  3 12  2 10  5  8  1  6 11
 ```
 
----
+***
 
 ## Ordering by Multiple Arguments
 
@@ -1761,7 +1762,7 @@ ind <- order(iris[1:12, "Sepal.Length"], iris[1:12, "Sepal.Width"])
 ## 6           5.4         3.9          1.7         0.4  setosa
 ```
 
----
+***
 
 ## Play With It And You Will Master It!
 
@@ -1770,8 +1771,7 @@ ind <- order(iris[1:12, "Sepal.Length"], iris[1:12, "Sepal.Width"])
 之後會在 ETL 課程碰到它，也會學到進階的資料處理技巧。
 
 
----
-
+***
 
 
 ```r
@@ -1787,7 +1787,7 @@ DF <- read.table(DSC2014Tutorial::ETL_file('cl_info_other.csv'), sep = ',',
 <img src="assets/img/read_no_colClasses.png", height=80%, width=80% class='fragment'/>
 <img src="assets/img/read_colClasses.png", height=80%, width=80% class='fragment'/>
 
----
+***
 
 ## Exercises:
 
@@ -1810,7 +1810,7 @@ DF <- read.table(DSC2014Tutorial::ETL_file('cl_info_other.csv'), sep = ',',
 </font>
 </div>
 
----
+***
 
 ## Useful Functions
 
@@ -1824,11 +1824,11 @@ DF <- read.table(DSC2014Tutorial::ETL_file('cl_info_other.csv'), sep = ',',
 
 - head(data, n)/tail(data, n)/View(data)
 
----
+***
 
 # Factor
 
----
+***
 
 ## Factor: First Look
 
@@ -1845,7 +1845,7 @@ DF <- read.table(DSC2014Tutorial::ETL_file('cl_info_other.csv'), sep = ',',
 
 <p class='fragment'>同款就不同師父啊(台)</p>
 
----
+***
 
 ## Try This!
 
@@ -1880,7 +1880,7 @@ Petal.W <- as.numeric(Petal.W)
 </p>
 </div>
 
----
+***
 
 ## The Answer
 
@@ -1900,13 +1900,13 @@ as.numeric(Petal.W)
 ##  [1] 2 2 2 2 2 4 3 2 2 1 2 2
 ```
 
----
+***
 
 <center>
 <img src="assets/img/What.png" width="50%" height="50%">
 </cent>
 
----
+***
 
 ## A Closer Look
 
@@ -1918,7 +1918,7 @@ as.numeric(Petal.W)
 <img src="assets/img/Vector.png" width="70%" height="70%">
 </center>
 
----
+***
 
 ## A Closer Look
 
@@ -1930,12 +1930,12 @@ as.numeric(Petal.W)
 <img src="assets/img/Factor.png" width="70%" height="70%">
 </center>
 
----
+***
 
 # Build-in Function
 ## factor()
 
----
+***
 
 ## factor()
 
@@ -1960,7 +1960,7 @@ test_factor <- factor(test_factor)
 </code></pre>
 </div>
 
----
+***
 
 ## Build-in Function: factor()
 
@@ -1985,7 +1985,7 @@ test_factor
 ## Levels: A B C D E
 ```
 
----
+***
 
 ## Pop Quiz
 
@@ -2003,7 +2003,7 @@ How can we correctly convert a factor into a vector? <br>
 </ol>
 
 
----
+***
 
 ## The Answer
 
@@ -2023,11 +2023,11 @@ Levels <- levels(my_factor)
 ##  [1] "10" "9"  "8"  "7"  "6"  "5"  "4"  "3"  "2"  "1"
 ```
 
----
+--- &vertical
 
 # Loops and Flow Control
 
----
+***
 
 ## For Loop
 
@@ -2054,7 +2054,7 @@ final_result
 ```
 
 
----
+***
 
 ## 剛剛的例子有點兒無聊....
 
@@ -2075,11 +2075,11 @@ final_result
                 system("espeak AhMen")
         }
 
----
+***
 
 # Control Flow
 
----
+***
 
 ### if / else
 <div align='left'>Syntex:</div>
@@ -2096,7 +2096,7 @@ final_result
 Note: else if and else are optional.
 </div>
 
----
+***
 
 ## Exercise: SVM Classifier
 
@@ -2110,9 +2110,7 @@ c(1.45284450, -0.04625854, 0.5211828, -1.003045, -0.4641298)
 <p class='fragment'>或許你可以問助教，助教什麼都會!</p>
 </div>
 
-
----
-
+***
 
 One simple way to get the data if you're using our package.
 
@@ -2121,8 +2119,7 @@ One simple way to get the data if you're using our package.
 data("RBasic_ForLoop_Ex")
 ```
 
-
----
+***
 
 ## Exercise: SVM Classifier
 
@@ -2139,7 +2136,7 @@ data("RBasic_ForLoop_Ex")
 </font>
 </div>
 
----
+***
 
 ## While Loop
 
@@ -2166,9 +2163,9 @@ Example:
     }
 
 
----
+***
 
-## While Loop (Cont.)
+## While Loop
 
 <img src="assets/img/while.gif" height="60%" width="60%" />
 
@@ -2180,12 +2177,12 @@ Example:
   <li class='fragment'>要如何避免使用者回答 'yes' 或 'no' 以外的東西呢?</li>
 </ol>
 
----
+--- &vertical
 
 # Basic Operation
 ## Phase II
 
---- 
+***
 
 ## Arithmetic Operations
 
@@ -2217,7 +2214,7 @@ my_vec1 <- c(1, 3, 5, 7); my_vec2 <- c(2, 4, 6, 8)
 ## [1]  2 12 30 56
 ```
 
----
+***
 
 ## Matrix Operations
 ### Multiplication and Transpose
@@ -2242,7 +2239,7 @@ my_mat2 <- matrix(runif(6), 3, 2)
 ## [2,] 7.263 7.478
 ```
 
----
+***
 
 ### Solving Linear System
 
@@ -2271,7 +2268,7 @@ $$
 </font>
 </div>
 
----
+***
 
 <div align='left'>Examples:</div>
 
@@ -2303,8 +2300,7 @@ $$
 ## [3,] -2.22e-16  5.551e-17  1.000e+00
 ```
 
----
-
+***
 
 
 ```r
@@ -2327,12 +2323,12 @@ It's time for mini project!
 </font>
 </div>
 
---- 
+--- &vertical 
 
 # Mini Project I
 ## Barnsley Fern Fractal
 
----
+***
 
 ## Barnsley Fern Fractal
 
@@ -2341,7 +2337,7 @@ It's time for mini project!
 </div>
 <img src="assets/img/Barnsley_Fern_0.png" height="20%" width="20%"/>
 
----
+***
 
 <div align='left'>
 ・ With 5% probability: <br>
@@ -2364,7 +2360,7 @@ It's time for mini project!
 <img src="assets/img/Barnsley_Fern_4.png" height="42.5%" width="42.5%"/>
 
 
----
+***
 
 
 - 依此規則迭代出 40000 點，再把這些點畫成圖。
@@ -2373,7 +2369,7 @@ It's time for mini project!
 
 <img src="assets/img/Barnsley_Fern_40000.png" height="70%" width="70%" />
 
----
+***
 
 ## Tips
 
@@ -2384,7 +2380,7 @@ It's time for mini project!
 - 這些參數不懂沒關係，它們的唯一功能就只是讓圖變漂亮而已。(很多我也是 Google 來的XD)
 
 
----
+***
 
 ## Template
 
@@ -2403,7 +2399,7 @@ utils::browseURL(path)
 </div>
 
 
----
+***
 
 ## The Answer
 
@@ -2415,12 +2411,12 @@ path <- DSC2014Tutorial::Basic_file("barnsley_fern_answer.R")
 utils::browseURL(path)
 ```
 
----
+--- &vertical
 
 # Function
 ## Define Your Own Function
 
----
+***
 
 <div align='left'>
 <font size="6">
@@ -2440,7 +2436,7 @@ Syntex:
   <li class='fragment'>強烈建議習慣性寫上 return()。</li>
 </ol>
 
----
+***
 
 ## Define Your Own Operation
 
@@ -2465,7 +2461,7 @@ Syntex:
 ## [1] 11
 ```
 
----
+***
 
 ## Default Values and Scoping Rule
 
@@ -2483,7 +2479,7 @@ MyFunction <- function(x, y, z=3, ...){
 }
 ```
 
----
+***
 
 ## Default Values and Scoping Rule
 
@@ -2517,7 +2513,7 @@ MyFunction(1, 3, 5, 2, 9)
 ## [1] 48
 ```
 
----
+***
 
 
 ```r
@@ -2566,18 +2562,18 @@ MyFunction(1, 3, 5, y = 2, x = 9)
   <font color='red' size='6'>It is time for Mini Project II!</font>
 </div>
 
----
+--- &vertical
 
 # Mini Project II
 ## Battleship
 
----
+***
 
 ## Battleship
 
 <img src="assets/img/battle_ship.gif" height="30%" width="30%" />
 
----
+***
 
 `接下來我們將一步步指導該如何造出這個 battleship()。`
 
@@ -2605,7 +2601,7 @@ map =list(c('O', 'O', 'O', 'O', 'O'),
 </div>
 
 
----
+***
 
 ## Template
 
@@ -2618,7 +2614,7 @@ utils::browseURL(path)
 ```
 
 
----
+***
 
 ## Some Function You Might Need
 
@@ -2667,7 +2663,7 @@ print('I love R!'); cat('I love R!')
 ## I love R!
 ```
 
----
+***
 
 ## Battleship 成品範例 
 
@@ -2677,11 +2673,11 @@ path <- DSC2014Tutorial::Basic_file("battleship_answer.R")
 utils::browseURL(path)
 ```
 
----
+--- &vertical
 
 # Help Yourself by Yourself
 
----
+***
 
 ## Why?
 
@@ -2691,7 +2687,7 @@ utils::browseURL(path)
   <li class='fragment'>No one can give you a hand if you does not reach out.</li>
 </ol>
 
----
+***
 
 ## But How?
 
